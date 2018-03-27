@@ -1,0 +1,10 @@
+<% if (Object.keys(messages).length >  0 ) { %>
+    <% Object.keys(messages).forEach((type) => { %>
+        <div class="alert alert-<%= type %>" role="alert">
+            <% messages[type].forEach( (message) => { %>
+                <p><%= message %></p>
+            <% }) %>
+        </div>
+    <% }) %>
+<% } %>
+

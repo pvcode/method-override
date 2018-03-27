@@ -1,0 +1,81 @@
+<% include ./../../_elements/notify %>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Search & Filter
+            </div>
+
+            <div class="panel-body">
+                <div class="status-list col-sm-4 pl0">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                List Items
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <form role="form" class="form-inline zt-form" id="zt-form" action="" method="post">
+                    <div class="zcontrols">
+                        <select name="action" class="form-control slbAction">
+                            <option value="">Bulk Action</option>
+                            <option value="<%= configsSystem.PREFIX_ADMIN %>/group/change-status/active">
+                                Active
+                            </option>
+                            <option value="<%= configsSystem.PREFIX_ADMIN %>/group/change-status/inactive">
+                                InActive
+                            </option>
+                            <option value="<%= configsSystem.PREFIX_ADMIN %>/group/save-ordering/">
+                                Change Ordering
+                            </option>
+                        </select>
+                        <button class="btn btn-info btnAction" type="button" value="btnAction">Apply</button>
+                        <div class="pull-right">
+                            <a href="<%= configsSystem.PREFIX_ADMIN %>/group/form" class="btn btn-warning btn-addNew">Add
+                                New</a>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th><input type="checkbox" class="cbAll"/></th>
+                                <th>#</th>
+                                <th>Title</th>
+                                <th>Status</th>
+                                <th>Content</th>
+                                <th>Ordering</th>
+                                <th>Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Pagination
+            </div>
+
+            <div class="panel-body">
+
+            </div>
+        </div>
+    </div>
+</div>
